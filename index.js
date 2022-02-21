@@ -1,6 +1,7 @@
 //packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./generateMarkdown');
 //array of questions for user input
 const questions = [{
     type: "input",
@@ -71,14 +72,24 @@ const questions = [{
 }
 ];
 
-//get prompts from the user
-
+//use inquirer.prompt to get input from the user
+const promptUser = () => {
+    inquirer.prompt(questions).then((response) => {
+        writeToFile("SAMPLE_README.md", generateMarkdown(response))
+    }
+    )}
 
 //function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err)=> {
+        err ? console.error(err) : console.log("File written")
+    })
+}
 
 //function to initialize app
-function init() {}
+function init() {
+    promptUser();
+}
 
 //function call to initialize app
 init();
