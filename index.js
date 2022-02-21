@@ -73,7 +73,8 @@ const questions = [{
 ];
 
 //use inquirer.prompt to get input from the user
-const promptUser = () => {
+// const promptUser = () => {
+    function promptUser(questions){
     inquirer.prompt(questions).then((response) => {
         writeToFile("SAMPLE_README.md", generateMarkdown(response))
     }
@@ -88,7 +89,7 @@ function writeToFile(fileName, data) {
 
 //function to initialize app
 function init() {
-    promptUser();
+    promptUser(questions);
 }
 
 //function call to initialize app
