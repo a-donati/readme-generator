@@ -18,7 +18,7 @@
   ## Usage
   From the application's root directory, run `node index.js`. Follow the user prompts to provide the content for the README file. Upon completion, the application will generate a new file, `SAMPLE_README.md`, in the root directory.
 
-  ![readme-gif](./assets/images/read-me-sample.gif)
+  ![readme-gif](./assets/images/readme-generator-usage.gif)
   
   ## License
   This application is covered under MIT License
