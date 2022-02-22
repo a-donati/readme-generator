@@ -44,7 +44,7 @@ function renderLicenseLink(license) {
     <summary>
       License Text
     </summary> 
-  \`\`\`
+  
   Copyright (c) ${data.year} ${data.fullName}
   Permission is hereby granted, free of charge, to any person obtaining a copy
   of this software and associated documentation files (the "Software"), to deal
@@ -63,7 +63,7 @@ function renderLicenseLink(license) {
   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
   SOFTWARE.
-  \`\`\`
+  
   </details>
   `;
         break;
@@ -75,7 +75,6 @@ function renderLicenseLink(license) {
     <summary>
       License Text
     </summary> 
-  \`\`\`
         
   Copyright (c) ${data.year} ${data.fullName}
                        GNU GENERAL PUBLIC LICENSE
@@ -630,7 +629,7 @@ function renderLicenseLink(license) {
   the library.  If this is what you want to do, use the GNU Lesser General
   Public License instead of this License.  But first, please read
   <https://www.gnu.org/licenses/why-not-lgpl.html>.
-  \`\`\`
+
   </details>
   `;
         break;
@@ -642,7 +641,7 @@ function renderLicenseLink(license) {
     <summary>
       License Text
     </summary> 
-  \`\`\`
+
             Apache License
         Version 2.0, January 2004
      http://www.apache.org/licenses/
@@ -811,7 +810,7 @@ function renderLicenseLink(license) {
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.
-  \`\`\`
+
   </details>
   `;
         break;

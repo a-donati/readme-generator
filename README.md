@@ -26,7 +26,7 @@
     <summary>
       License Text
     </summary> 
-  ```
+ 
   Copyright (c) 2022 test User
   Permission is hereby granted, free of charge, to any person obtaining a copy
   of this software and associated documentation files (the "Software"), to deal
@@ -45,7 +45,7 @@
   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
   SOFTWARE.
-  ```
+
   </details>
   
 
@@ -53,6 +53,6 @@
   Please contact the author to be added as a collaborator to this project.
 
   ## Questions
-  Contact me via [email](mailto:test@gmail.com)
-  View my GitHub [profile](http://www.github.com/undefined)
+  * Contact me via [email](mailto:test@gmail.com)
+  * View my GitHub [profile](http://www.github.com/undefined)
 
