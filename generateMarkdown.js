@@ -825,7 +825,6 @@ function renderLicenseLink(license) {
 
 
 //function to generates markdown for README, taking in data
-// can destructure here
 function generateMarkdown(data) {
   return `# ${data.projectName}
 
