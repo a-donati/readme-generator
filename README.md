@@ -53,6 +53,6 @@
   Please contact the author to be added as a collaborator to this project.
 
   ## Questions
-  * Contact me via [email](mailto:test@gmail.com)
-  * View my GitHub [profile](http://www.github.com/undefined)
+  * Contact me via [email](mailto:angeladonati93@gmail.com)
+  * View my GitHub [profile](http://www.github.com/a-donati)
 
