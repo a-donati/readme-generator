@@ -13,12 +13,12 @@
   * [Questions](#Questions)
 
   ## Installation
-  From GitHub, fork or clone the repo. The user must have Node.js installed. Once forked, run `npm i` from the root directory to install required dependencies(Inquirer NPM).
+  From GitHub, fork or clone the repo. The user must have Node.js installed. Once forked, run `npm i` from the root directory to install required dependencies.
 
   ## Usage
-  From the application's root directory, run `node index.js`. Follow the user prompts to provide the content for the README file. Upon completion, the application will generate a new file, `SAMPLE_README.md`, in the root directory.
+  From the application's root directory, run `node index.js`. Follow the user prompts to provide the content for the README file. Upon completion, the application will generate a new file, `SAMPLE_README.md`, in the root directory. [SAMPLE_README.md](./assets/SAMPLE_README.md)
 
-  ![readme-gif](./assets/images/readme-generator-usage.gif)
+  ![readme-gif](./assets/images/samplereadmedemo.gif)
   
   ## License
   This application is covered under MIT License

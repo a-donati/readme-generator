@@ -4,21 +4,21 @@
 function renderLicenseBadge(license) {
   switch (license) {
     case "MIT License":
-      return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+      response =  "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
       break;
     case "GNU GPLv3":
-      return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
+      response =  "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
       break;
     case "Apache License 2.0":
-      return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+      response =  "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
       break;
     case "No license":
-      return "";
+      response =  "";
       break;
     default:
-      return "";
-
+      response =  "";
   }
+  return response
 };
 
 //function takes in data.license 
@@ -32,12 +32,12 @@ function renderLicenseLink(license) {
 }
 
 //function that returns the license section of README
-// If there is no license, return an empty string
+//If there is no license, return an empty string
 // function renderLicenseSection(license) {
   function renderLicenseSection(data) {
     switch (data.license) {
       case "MIT License":
-        return `
+        response =  `
   ## License
   This application is covered under ${data.license}
   <details>
@@ -68,7 +68,7 @@ function renderLicenseLink(license) {
   `;
         break;
       case "GNU GPLv3":
-        return `
+        response =  `
   ## License
   This application is covered under ${data.license}
   <details>
@@ -634,7 +634,7 @@ function renderLicenseLink(license) {
   `;
         break;
       case "Apache License 2.0":
-        return `
+        response =  `
   ## License
   This application is covered under ${data.license}
   <details>
@@ -815,11 +815,12 @@ function renderLicenseLink(license) {
   `;
         break;
       case "No License":
-        return "";
+        response =  "";
         break;
       default:
-        return "";
+        response =  "";
     }
+    return response;
   };
 
 
@@ -860,7 +861,7 @@ function generateMarkdown(data) {
 
   ## Questions
   Contact me via [email](mailto:${data.email})
-  View my GitHub [profile](http://www.github.com/${data.username})
+  View my GitHub [profile](http://www.github.com/${data.userName})
 
 `;
 }

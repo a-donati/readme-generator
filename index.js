@@ -3,7 +3,8 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./generateMarkdown');
 //array of questions for user input
-const questions = [{
+const promptUser = () => {
+    return inquirer.prompt([{
     type: "input",
     message: "Please enter your project name:",
     name: "projectName",
@@ -17,7 +18,7 @@ const questions = [{
     type: "input",
     message: "Please enter installation instructions:",
     name: "installation",
-},{
+}, {
     type: "input",
     message: "Please enter usage information:",
     name: "usage",
@@ -70,27 +71,14 @@ const questions = [{
     message: "Please enter the year the application was created:",
     name: "year",
 }
-];
+])};
 
-//use inquirer.prompt to get input from the user
-// const promptUser = () => {
-    function promptUser(questions){
-    inquirer.prompt(questions).then((response) => {
-        writeToFile("SAMPLE_README.md", generateMarkdown(response))
-    }
-    )}
-
-//function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, (err)=> {
-        err ? console.error(err) : console.log("File written")
-    })
-}
-
-//function to initialize app
-function init() {
-    promptUser(questions);
-}
 
 //function call to initialize app
+const init = () => {
+    promptUser()
+    .then((answers) => fs.writeFileSync('SAMPLE_README.md', generateMarkdown(answers)))
+    .then(() => console.log('File successfully written.'))
+    .catch((err) => console.log(err));
+};
 init();
